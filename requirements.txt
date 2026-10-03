@@ -1,0 +1,6 @@
+﻿ultralytics==8.3.*
+fiftyone
+opencv-python
+PyYAML
+Pillow
+numpy

@@ -1,0 +1,41 @@
+# Python Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Datasets (Images & Labels - Manifests are preserved in datasets/manifests/)
+datasets/raw/
+datasets/train/
+datasets/val/
+datasets/test/
+*.zip
+*.tar
+*.tar.gz
+
+# FiftyOne Cache & DB
+fiftyone/
+.fiftyone/
+
+# Training Logs & Runs
+runs/
+*.log
+
+# Checkpoints (Keep best.pt and exported models, ignore large intermediate training epochs)
+models/checkpoints/last.pt
+
+# OS / IDE Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+desktop.ini
+.DS_Store
