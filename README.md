@@ -5,7 +5,8 @@
 **Bridging the Critical 2-to-4 Hour Emergency Inspection Delay in Degree III Gassy Underground Coal Mines**
 
 [![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-SIH_2026_PS_ID:_SIH26039-f59e0b?style=for-the-badge&logo=target&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
-[![Live Platform](https://img.shields.io/badge/Live_Deployment-Vercel_Production-00f0ff?style=for-the-badge&logo=vercel&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
+[![Live Web Platform & OCU Terminal](https://img.shields.io/badge/Live_Web_Platform_%26_OCU_Terminal-Vercel_Production-00f0ff?style=for-the-badge&logo=vercel&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
+[![Live Mission GCS Dashboard](https://img.shields.io/badge/Live_GCS_Dashboard-Streamlit_Production-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white)](https://setu-dashboard.streamlit.app/)
 [![YouTube Demos](https://img.shields.io/badge/YouTube-Video_Demonstrations-ff0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD)
 [![CAD Chassis](https://img.shields.io/badge/3D_CAD-Chassis_Design_Repo-10b981?style=for-the-badge&logo=autodesk&logoColor=white)](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design)
 [![DGMS Roadmap](https://img.shields.io/badge/Statutory_Target-DGMS_%2F_PESO_Ex_d_I_Mb-8b5cf6?style=for-the-badge&logo=shield&logoColor=white)](https://setu-mine-rescue-rover.vercel.app/#credibility)
@@ -19,7 +20,7 @@
 [![Bio-Radar](https://img.shields.io/badge/Subsurface_Radar-400MHz_FMCW_Impedance_Matched-8b5cf6?style=flat-square)](#)
 [![Telemetry](https://img.shields.io/badge/RF_Telemetry-Sub--GHz_LoRa_Strata_Penetrating-0284c7?style=flat-square)](#)
 
-[🌐 **Explore Live Web Platform & OCU Terminal**](https://setu-mine-rescue-rover.vercel.app) • [📹 **YouTube Field Validation Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [🛠️ **3D CAD Chassis Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [📁 **Important Docs Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [💻 **Live Dashboard**](https://setu-dashboard.streamlit.app/)
+[🌐 **Explore Live Web Platform & OCU Terminal**](https://setu-mine-rescue-rover.vercel.app) • [📡 **Live Mission GCS Dashboard**](https://setu-dashboard.streamlit.app/) • [📹 **YouTube Field Validation Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [🛠️ **3D CAD Chassis Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [📁 **Important Docs Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5)
 
 </div>
 
@@ -47,16 +48,17 @@
 
 ## 🔗 Project Ecosystem, Live Deployments & Essential Repositories
 
-Project SETU encompasses physical mechatronics, edge artificial intelligence, 3D structural CAD modeling, and cloud/edge mission command dashboards across specialized repositories and deployment links:
+Project SETU encompasses physical mechatronics, edge artificial intelligence, 3D structural CAD modeling, cloud web platforms, and real-time mission GCS telemetry dashboards across specialized repositories and deployment links:
 
 | Project Domain / Resource | Access Link | Description & Contents |
 | :--- | :--- | :--- |
-| **🌐 Live Web Platform & OCU Simulator** | [**setu-mine-rescue-rover.vercel.app**](https://setu-mine-rescue-rover.vercel.app) | Production web platform featuring the interactive OCU Terminal HUD simulator, 6 high-definition field demonstration videos, interactive 12-hotspot schematic viewer, dual-theme daylight/tactical engine, and DGMS roadmap. |
-| **💻 Live Dashboard Web Repository** | [**moinkhanCreates/SETU**](https://github.com/moinkhanCreates/SETU) | Complete frontend web platform source code built with modern Vanilla CSS, GSAP animations, interactive audio recon officer, and modular UI components. |
+| **🌐 Live Web Platform & OCU Terminal** | [**setu-mine-rescue-rover.vercel.app**](https://setu-mine-rescue-rover.vercel.app) | Production web platform featuring the interactive OCU Terminal HUD simulator, 6 high-definition field demonstration videos, interactive 12-hotspot schematic viewer, dual-theme daylight/tactical engine, and DGMS roadmap. |
+| **💻 Live Web Platform & OCU Terminal Repository** | [**moinkhanCreates/SETU**](https://github.com/moinkhanCreates/SETU) | Complete frontend web platform source code for the Vercel-deployed portal built with modern Vanilla CSS, GSAP animations, interactive audio recon officer, and modular UI components. |
+| **📡 Live Mission GCS Telemetry Dashboard** | [**setu-dashboard.streamlit.app**](https://setu-dashboard.streamlit.app/) | The real-time operational Surface Ground Control Station (GCS) telemetry dashboard and atmospheric physics analytics engine built with Streamlit, dual-mode 0-lux tactical dark / high-visibility light HUD, 5-gas Coward explosibility triangle, Graham's fire ratio, 400 MHz FMCW bio-radar vital sign isolation, and multi-sensor mission scenario simulation. |
+| **📊 Mission GCS Telemetry Dashboard Repository** | [**abarhammalik/SETU-Dashboard**](https://github.com/abarhammalik/SETU-Dashboard) | Dedicated repository for the Streamlit GCS telemetry dashboard and atmospheric physics analytics engine (also integrated locally within this repository under [`dashboard/`](file:///c:/Users/Abdul%20Arham%20Malik/OneDrive/Desktop/SETU/dashboard)). |
 | **🛠️ 3D CAD Chassis & Mechanical Repo** | [**Mine-Rover-Chasis_Design**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) | Complete mechanical design repository containing 3D CAD assemblies, STEP/STL fabrication models, articulated twin-chassis rocker linkages, and structural FEA load analyses. |
 | **📹 YouTube Field Validation Playlist** | [**Watch on YouTube (Playlist)**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) | Curated video demonstration archive containing live footage of: 35° incline climbing, 50 kg obstacle step climbing, active underground mine testing, zero-lux night vision trials, and handheld OCU teleoperation. |
 | **📁 Technical Documentation & Literature** | [**Google Drive Document Repository**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) | Secure repository containing verified academic research papers, DGMS technical circulars, Coal Mines Regulations (CMR) 2017 standards, sensor calibration certificates, and testing dossiers. |
-| **📡 Real-Time Mission GCS Dashboard** | [**setu-dashboard.streamlit.app**](https://setu-dashboard.streamlit.app/)<br>[**abarhammalik/SETU-Dashboard**](https://github.com/abarhammalik/SETU-Dashboard) | The real-time operational GCS (Ground Control Station) telemetry dashboard and atmospheric physics analytics engine built with Streamlit, dual-mode 0-lux tactical dark / high-visibility light HUD, 5-gas Coward explosibility triangle, Graham's fire ratio, 400 MHz FMCW bio-radar vital sign isolation, and multi-sensor mission scenario simulation. |
 
 ---
 
@@ -655,6 +657,6 @@ The application will launch on `http://localhost:8501`. Alternatively, access th
 *Engineered for Smart India Hackathon 2026 (Problem Statement ID: SIH26039)*  
 Developed with pride for **Atmanirbhar Bharat** & **Make in India** 🇮🇳
 
-[**Explore Live Web Platform**](https://setu-mine-rescue-rover.vercel.app) • [**YouTube Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [**CAD Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [**Technical Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [**Back to Top ⬆**](#-project-setu-सेतु)
+[**Explore Live Web Platform & OCU Terminal**](https://setu-mine-rescue-rover.vercel.app) • [**Live Mission GCS Dashboard**](https://setu-dashboard.streamlit.app/) • [**YouTube Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [**CAD Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [**Technical Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [**Back to Top ⬆**](#-project-setu-सेतु)
 
 </div>
