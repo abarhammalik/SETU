@@ -1,25 +1,23 @@
 <div align="center">
 
 # 🚜 PROJECT SETU (सेतु)
-### Industrial-Grade AI-Assisted Subterranean Mine Rescue & Multi-Spectral Reconnaissance Rover
+### Articulated Twin-Chassis Subterranean Mine Reconnaissance & Multi-Hazard Edge AI Profiling Infrastructure
 **Bridging the Critical 2-to-4 Hour Emergency Inspection Delay in Degree III Gassy Underground Coal Mines**
 
-[![Live Demo](https://img.shields.io/badge/Live_Deployment-Vercel_Production-00f0ff?style=for-the-badge&logo=vercel&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
-[![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-SIH_2026_PS_ID:_SIH26039-f59e0b?style=for-the-badge&logo=target&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
-[![DGMS Ex d I Mb](https://img.shields.io/badge/Certification_Target-DGMS_%2F_PESO_Ex_d_I_Mb-10b981?style=for-the-badge&logo=shield&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
+[![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-SIH_2026_PS_ID:_SIH26039-f59e0b?style=for-the-badge&logo=target&logoColor=white)](https://github.com/abarhammalik/SETU)
+[![Prototype Status](https://img.shields.io/badge/Platform_Status-65%25_Physically_Built_&_Mine_Validated-10b981?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/abarhammalik/SETU)
+[![DGMS Roadmap](https://img.shields.io/badge/Statutory_Target-DGMS_%2F_PESO_Ex_d_I_Mb-00f0ff?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/abarhammalik/SETU)
 
 ---
 
 [![Atmanirbhar Bharat](https://img.shields.io/badge/National_Mission-Atmanirbhar_Bharat-ff9933?style=flat-square&logo=india&logoColor=white)](#)
 [![Make In India](https://img.shields.io/badge/Initiative-Make_in_India-138808?style=flat-square)](#)
-[![Edge AI](https://img.shields.io/badge/Edge_Compute-NVIDIA_Jetson_AGX_Orin_275_TOPS-76b900?style=flat-square&logo=nvidia&logoColor=white)](#)
-[![ROS 2](https://img.shields.io/badge/Robotics_Middleware-ROS_2_Humble-22314E?style=flat-square&logo=ros&logoColor=white)](#)
-[![LiDAR](https://img.shields.io/badge/3D_Spatial_LiDAR-Ouster_OS0--128-06b6d4?style=flat-square)](#)
-[![Thermal Vision](https://img.shields.io/badge/Radiometric_Thermal-FLIR_Boson_LWIR-e11d48?style=flat-square&logo=flir&logoColor=white)](#)
-[![Bio-Radar](https://img.shields.io/badge/Life_Detection-400MHz_FMCW_UWB_Radar-8b5cf6?style=flat-square)](#)
-[![Motor Controller](https://img.shields.io/badge/Motor_Control-ESP32_+_BTS7960_43A-d97706?style=flat-square)](#)
+[![Edge AI](https://img.shields.io/badge/Edge_AI-YOLOv8s_Onboard_Inference-76b900?style=flat-square&logo=nvidia&logoColor=white)](#)
+[![Thermal Vision](https://img.shields.io/badge/Radiometric_Thermal-LWIR_8--14µm-e11d48?style=flat-square)](#)
+[![Bio-Radar](https://img.shields.io/badge/Subsurface_Radar-400MHz_FMCW_Impedance_Matched-8b5cf6?style=flat-square)](#)
+[![Telemetry](https://img.shields.io/badge/RF_Telemetry-Sub--GHz_LoRa_Strata_Penetrating-0284c7?style=flat-square)](#)
 
-[🌐 **Explore Web Platform & OCU Terminal Simulator**](https://setu-mine-rescue-rover.vercel.app) • [📹 **Watch 6 Field Demos**](https://setu-mine-rescue-rover.vercel.app/#demonstrations) • [🧭 **Interactive Schematic**](https://setu-mine-rescue-rover.vercel.app/#hardware-labeling) • [📑 **DGMS Roadmap**](https://setu-mine-rescue-rover.vercel.app/#credibility)
+[📑 **Full Architecture Dossier**](ARCHITECTURE.md) • [📊 **Model Benchmark Report**](VALIDATION.md) • [⚡ **System Overview**](summary.md) • [🔬 **Technical Dossier**](discrption.md)
 
 </div>
 
@@ -27,480 +25,595 @@
 
 ## 📑 Table of Contents
 1. [Executive Summary & Problem Statement](#-executive-summary--problem-statement)
-2. [Tactical Capabilities & Feature Breakdown (11 Domains)](#-tactical-capabilities--feature-breakdown)
-3. [System Architecture & Data Pipelines](#-system-architecture--data-pipelines)
-4. [Hardware Blueprint & 12 Subsystem Callouts](#-hardware-blueprint--12-subsystem-callouts)
-5. [Multi-Gas Atmospheric Suite & Chemistry Matrix](#-multi-gas-atmospheric-suite--chemistry-matrix)
-6. [Mathematical & Physics Formulations](#-mathematical--physics-formulations)
-7. [Physical Validation Evidence (6 Videos + 6 Field Frames)](#-physical-validation-evidence)
-8. [Cross-State Teleoperation & Long-Range Control](#-cross-state-teleoperation--long-range-control)
-9. [Two-Way Trapped Worker Audio Intercom](#-two-way-trapped-worker-audio-intercom)
-10. [DGMS, PESO & CIMFR Certification Roadmap](#-dgms-peso--cimfr-certification-roadmap)
-11. [Repository Structure & Local Development](#-repository-structure--local-development)
+2. [Ground-Level Realities & Operational Bottleneck](#-ground-level-realities--operational-bottleneck)
+3. [Empirical Validation & 65% Prototype Build Status](#-empirical-validation--65-prototype-build-status)
+4. [Platform Architecture & Co-Processor Decoupling](#-platform-architecture--co-processor-decoupling)
+5. [Tactical Capabilities & Subsystem Breakdown](#-tactical-capabilities--subsystem-breakdown)
+6. [Multi-Spectral Perception & Edge AI Detection](#-multi-spectral-perception--edge-ai-detection)
+7. [Subsurface Life Detection: Impedance-Matched FMCW Bio-Radar](#-subsurface-life-detection-impedance-matched-fmcw-bio-radar)
+8. [Atmospheric Monitoring & Multi-Gas Safety Suite](#-atmospheric-monitoring--multi-gas-safety-suite)
+9. [Split-Spectrum Resilient Communication Mesh](#-split-spectrum-resilient-communication-mesh)
+10. [Standalone Surface Command Console (Zero-Laptop Operation)](#-standalone-surface-command-console-zero-laptop-operation)
+11. [Two-Way Trapped Worker Audio Intercom](#-two-way-trapped-worker-audio-intercom)
+12. [Failsafe & Autonomous Safety Watchdogs](#-failsafe--autonomous-safety-watchdogs)
+13. [Statutory Compliance & Certification Roadmap (DGMS, PESO, CIMFR)](#-statutory-compliance--certification-roadmap)
+14. [Economic Viability & Import Substitution Analysis](#-economic-viability--import-substitution-analysis)
+15. [Repository Structure & Getting Started](#-repository-structure--getting-started)
 
 ---
 
 ## 🚨 Executive Summary & Problem Statement
 
-In underground coal mining disasters (roof falls, gas explosions, strata fires, and inundations), conventional mine rescue protocols enforce a mandatory **2-to-4 hour standby delay** while surface teams assess atmospheric flammability. Entering volatile, unmapped headings risks human rescuers' lives to secondary firedamp explosions and lethal afterdamp gas concentrations.
+Underground coal extraction operations within India's high-risk mining corridors — notably across the **Bharat Coking Coal Limited (BCCL) Jharia Fire Basin** and **Eastern Coalfields Limited (ECL) Raniganj-Mugma complexes** — face severe, unpredictable hazard matrices. Following a catastrophic subterranean event (firedamp explosion, air blast, massive roof collapse, or water inrush), standard mine rescue protocols enforce a mandatory **2-to-4 hour standby delay**.
+
+Under **Coal Mines Regulations (CMR) 2017 (Regulation 169)** and **Mines Rescue Rules (1985)**, human rescue brigades are strictly prohibited from entering affected workings until manual air sampling verifies:
+- **Carbon Monoxide (CO)** is below $50\text{ ppm}$
+- **Methane ($\text{CH}_4$)** is below the Lower Explosive Limit threshold of $1.25\%\text{ vol}$
+- **Oxygen ($\text{O}_2$)** is above $19.0\%\text{ vol}$ for human survival
 
 ```
-CONVENTIONAL MINING PROTOCOL (HIGH DELAY & RISK):
-[Disaster Event] ──> [2-to-4 Hour Atmospheric Standby] ──> [High-Risk Human Rescue Ingress] ──> [Secondary Risk]
+CONVENTIONAL DISASTER RESPONSE (HIGH DELAY & RISK):
+[Catastrophic Event] ──► [Mandatory 2-4 Hr Gas Verification Delay] ──► [Rescuers Risk Secondary Explosions]
+                                 ▲ FATAL RESCUE BLINDSPOT ▲
 
 PROJECT SETU RAPID RESPONSE PARADIGM:
-[Disaster Event] ──> [Immediate SETU Rover Ingress] ──> [Real-Time 3D SLAM + 5-Gas + Bio-Radar] ──> [Surgical Human Entry]
-                       ⏱️ < 15 Minutes Deployment              📊 Zero Human Life At Risk
+[Catastrophic Event] ──► [Immediate SETU Rover Ingress (< 5 min)] ──► [Surgical, Safe Human Deployment]
+                              ├── Real-Time Multi-Gas Profiling
+                              ├── Radiometric Thermal Hotspot Mapping
+                              ├── 400 MHz FMCW Bio-Radar Life Detection
+                              └── Strata-Piercing Sub-GHz Telemetry
 ```
 
-**PROJECT SETU (सेतु)** is an industrial-grade, AI-assisted autonomous and teleoperated subterranean ground reconnaissance vehicle engineered to bridge this critical operational window. Built for **Degree III Gassy Coal Mines** (e.g., Jharia, Raniganj, Singareni), SETU penetrates unmapped galleries to deliver real-time **3D LIO-SAM mapping**, **FLIR radiometric thermal imaging**, **400 MHz FMCW sub-surface bio-radar respiration detection**, and **5-gas atmospheric hazard profiling** before human teams are committed.
+This statutory protocol creates an unavoidable operational blindspot during the **"Golden Hour" of rescue**, when trapped miners most frequently succumb to toxic asphyxiation, secondary roof falls, or thermal shock.
+
+**PROJECT SETU (सेतु)** solves this challenge by delivering an **articulated twin-chassis autonomous and teleoperated ground vehicle** accompanied by a **standalone handheld surface command console**. Built to enter unverified, volatile mine headings immediately ahead of human personnel, SETU performs multi-gas hazard profiling, radiometric thermal thermography, through-rubble vital sign bio-radar detection, and live zero-lux visual reconnaissance without reliance on external cloud or telecommunications infrastructure.
 
 ---
 
-## ⚡ Tactical Capabilities & Feature Breakdown
+## ⛏️ Ground-Level Realities & Operational Bottleneck
+
+Why existing commercial and industrial robotic platforms fail inside deep underground mines:
+
+| Subterranean Hazard | Failure Mechanism of Legacy / Commercial Platforms | Project SETU Solution |
+| :--- | :--- | :--- |
+| **Volatile $\text{CH}_4$ Influx (Degree III Gassy Seams)** | Commercial plastic/aluminum rovers deploy unshielded electronics that act as electrical spark ignition sources, triggering catastrophic firedamp explosions. | Engineered toward **Ex d I Mb flameproof** and **Ex ia I Ma intrinsic safety** standards with sealed enclosures, galvanic isolation, and energy-limited external lines. |
+| **Dense Coal Dust & Suspended Particulates (> 2000 mg/m³)** | Standard RGB visual cameras and short-wavelength optical sensors are completely blinded by airborne dust and steam. | **Synchronized dual-spectrum vision**: Long-Wave Infrared (LWIR) radiometric thermal imaging paired with active 850 nm NoIR night vision. |
+| **Complete RF Signal Collapse Around Solid Rock Bends** | Standard 2.4 GHz and 5.8 GHz Wi-Fi links attenuate by $> 40\text{ dB}$ per solid coal pillar turn, losing connectivity within 20–30 meters. | **Split-Spectrum Topology**: Un-jammable Sub-GHz LoRa (diffracting carrier wavelength $\lambda \approx 69\text{ cm}$) for telemetry + connectionless multi-hop video mesh. |
+| **Complex Post-Disaster Debris & High-Centering** | Rigid 4-wheel or single-chassis platforms bottom out and get high-centered when attempting to cross jagged rock piles and broken timbers. | **Articulated twin-chassis topology** with a passive multi-axis rocker linkage that maintains all-wheel ground traction across 35° rubble and 150–220 mm steps. |
+| **Trapped Miners Buried Under Rubble** | Optical, thermal, and acoustic sensors cannot detect victims buried beneath compacted sandstone and coal roof falls. | **Impedance-matched 400 MHz FMCW bio-radar** with automated contact radome that penetrates up to 10 meters of rubble to isolate 0.2–0.5 Hz human respiration. |
+
+---
+
+## 🔬 Empirical Validation & 65% Prototype Build Status
+
+Project SETU is **not a theoretical concept or CAD-only exercise**. The platform is an **empirically validated, physically built prototype with approximately 65% of the full industrial build complete**, having undergone rigorous testing across real-world operational environments.
+
+### Prototype Build & Subsystem Status Scorecard
+
+| Subsystem Domain | Build Status | Validated Physical Benchmark & Field Performance |
+| :--- | :---: | :--- |
+| **Articulated Twin-Chassis Frame** | **80% Complete** | Traversed 35° rock inclines, waterlogged mud, loose gravel heaps, and 150 mm–220 mm obstacles without motor stall. |
+| **Low-Level Control & Circuitry** | **100% Complete** | Dual-core deterministic firmware verified under full motor stall current with clean sensor rails and galvanic isolation. |
+| **Sub-GHz RF Telemetry Link** | **100% Complete** | Maintained continuous bi-directional control link across multiple concrete building levels (3rd/2nd floor down to sub-basement). |
+| **Wireless Live Video Transmission** | **100% Complete** | Real-time 20+ FPS video stream received on handheld operator display via connectionless RF protocol. |
+| **Standalone Surface Controller** | **100% Complete** | Dedicated handheld console with 7-inch live display, dual analog joysticks, and gas metric dashboard (zero laptop required). |
+| **Edge AI YOLO Neural Pipeline** | **100% Complete** | Optimized YOLO models running live on onboard edge compute with real-time person detection and bounding box alerts. |
+| **Authentic Underground Mine Trials** | **Completed** | Deployed in an active local underground mine heading: captured radiometric thermal imagery, zero-lux night vision, and in-situ gas logs. |
+| **Multi-Gas Electrochemical Array** | **100% Complete** | Channels ($\text{CH}_4$, $\text{CO}$, $\text{O}_2$, $\text{H}_2\text{S}$) sampled and converted to calibrated PPM engineering units with high-resolution ADC sampling. |
+| **Obstacle Clearance Scanner** | **100% Complete** | Continuous 0° to 180° sweep generating real-time obstacle proximity maps on the controller screen. |
+| **3D Structural CAD Architecture** | **100% Complete** | Full structural CAD assembly completed with FEA load analysis, prepared for CNC flameproof tooling. |
+
+### Key Field Trial Observations
+
+1. **Underground Mine Gallery Testing:**
+   - Successfully deployed into an active underground mine heading.
+   - Radiometric thermal imaging clearly distinguished ambient rock face temperatures (26°C to 31°C) from localized heat sources, proving spontaneous combustion detection capability.
+   - NoIR night vision with 850 nm infrared illumination produced crisp gallery rib and obstacle contours in absolute 0-lux darkness.
+2. **Multi-Story Structural Penetration Trials:**
+   - Bi-directional telemetry and video transmission maintained unbroken connectivity from a 2nd/3rd floor transmitter down through reinforced concrete floor slabs into a sub-basement bunker.
+3. **Severe Terrain & Incline Proving:**
+   - The articulated chassis conquered 35° unpaved slag slopes, loose coal heaps, mud slurry, and stepped obstacles without throwing tracks or stalling drive motors.
+4. **Dark-Environment Road Construction Site Tests:**
+   - Validated nighttime person detection and obstacle avoidance in zero-light, dust-heavy conditions.
+
+---
+
+## 🏗️ Platform Architecture & Co-Processor Decoupling
+
+To guarantee **deterministic vehicle control and uncompromised operator safety** during compute-heavy AI tasks, Project SETU enforces an asynchronous **Symmetric Multi-Processing / Co-Processor Architecture**.
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        PROJECT SETU ROVER CORE                         │
+├───────────────────────────────────┬────────────────────────────────────┤
+│     HIGH-LEVEL EDGE AI ENGINE     │   LOW-LEVEL DETERMINISTIC ENGINE   │
+│   (Onboard Edge AI Compute SoC)   │    (Real-Time 32-Bit Controller)   │
+├───────────────────────────────────┼────────────────────────────────────┤
+│ • Hardware-Accelerated YOLO       │ • Deterministic Motor Actuation    │
+│ • Radiometric Thermal Analysis    │ • Sensor Polling & High-Res ADC    │
+│ • Bio-Radar Respiration DSP       │ • Hardware Watchdog Supervision    │
+│ • Local Video Compression         │ • LoRa Command Packet Parsing      │
+│ • Spatial Mapping & Odometry      │ • Fail-Safe Motor Cutoff Interlock │
+└─────────────────┬─────────────────┴──────────────────┬─────────────────┘
+                  │                                    │
+                  ▼                                    ▼
+       High-Bandwidth Video Link             Sub-GHz Safety-Critical
+        (Connectionless Stream)                   Telemetry & Control
+                  │                                    │
+                  └─────────────────┬──────────────────┘
+                                    ▼
+               ┌──────────────────────────────────────────┐
+               │    STANDALONE SURFACE COMMAND CONSOLE    │
+               │  (Zero-Laptop Rugged Handheld Controller)│
+               └──────────────────────────────────────────┘
+```
+
+### 1. Articulated Twin-Chassis Mechanical Topology
+The vehicle is divided into two distinct modular pods connected by an **engineered multi-axis passive rocker linkage**:
+- **Front Pod (Perception & Environmental Sensing):** Houses the multi-spectral camera suite, thermal core, obstacle ranging sensor, and multi-gas intake array.
+- **Rear Pod (Compute, Propulsion & Power):** Houses the edge AI compute module, real-time motor controller, high-discharge traction battery, and strata-penetrating antenna arrays.
+- **Lower Undercarriage Radome Tray:** Features the downward-looking 400 MHz FMCW bio-radar assembly inside an impact-resistant, hermetically sealed housing.
+
+**Operational Benefit:** When navigating over uneven rockfalls or collapsed timbers, the articulated joint allows the front and rear pods to pitch and oscillate independently. This ensures continuous all-wheel contact, distributes ground pressure, and eliminates the catastrophic chassis high-centering that immobilizes traditional rigid rovers.
+
+### 2. High-Level Compute vs. Low-Level Control Decoupling
+- **Edge AI Compute Node:** Handles data-intensive tasks including neural inference, image enhancement, micro-Doppler radar filtering, and video compression.
+- **Real-Time Controller:** Dedicated exclusively to time-critical mechatronic functions. Operates independent of the Linux OS state; even during high computational loads or operating system reboot cycles, vehicle balance, motor states, and safety interlocks remain 100% active and deterministic.
+
+---
+
+## ⚡ Tactical Capabilities & Subsystem Breakdown
 
 <table>
   <thead>
     <tr>
       <th width="8%">#</th>
-      <th width="24%">Operational Domain</th>
-      <th width="48%">Core Technical Capabilities</th>
-      <th width="20%">Key Hardware / Protocols</th>
+      <th width="22%">Operational Domain</th>
+      <th width="50%">Core Technical Capabilities</th>
+      <th width="20%">Key Protocols / Modalities</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>01</strong></td>
-      <td><strong>🚜 Mobility &amp; Remote Operation</strong></td>
+      <td><strong>🚜 Mobility &amp; Rough Terrain Ingress</strong></td>
       <td>
-        • Articulated twin-chassis crawler with 4-wheel/4-motor independent propulsion<br/>
-        • High-current BTS7960 H-bridges traversing mud, loose gravel, and <strong>33° rock slag inclines</strong><br/>
-        • Planetary flipper sub-tracks delivering <strong>220 mm obstacle step climbing</strong><br/>
-        • Local wireless joystick OCU + Sub-GHz LoRa mesh + <strong>Mumbai ↔ Jharkhand 4G/5G long-distance teleop</strong><br/>
-        • 100 ms communication-loss failsafe watchdog with automatic motor lock
+        • Articulated twin-chassis with 4-wheel independent planetary propulsion<br/>
+        • Traversing waterlogged mud, loose gravel heaps, and <strong>35° rock inclines</strong><br/>
+        • Low ground clearance obstacle step climbing (up to 220 mm)<br/>
+        • Continuous all-wheel surface traction via multi-axis passive rocker joint
       </td>
-      <td><code>BTS7960 43A</code> <code>4-Motor Drive</code> <code>LoRa Mesh</code> <code>4G/5G MQTT</code> <code>E-Stop Watchdog</code></td>
+      <td>Planetary Drives, Twin-Chassis Articulation, High-Torque Propulsion</td>
     </tr>
     <tr>
       <td><strong>02</strong></td>
-      <td><strong>👁️ Multi-Modal Perception</strong></td>
+      <td><strong>👁️ Multi-Spectral Perception</strong></td>
       <td>
-        • Synchronized dual-spectrum vision cutting through dense coal dust clouds &amp; smoke<br/>
-        • <strong>FLIR Radiometric LWIR (8–14 µm, &lt;50 mK NETD)</strong> thermal imager<br/>
-        • Sony IMX662 Starvis 2 RGB camera + <strong>850 nm active infrared NoIR night vision</strong><br/>
-        • <strong>180° fisheye panoramic awareness</strong> &amp; thermal heat anomaly gradient tracking
+        • Dual-spectrum vision piercing dense suspended coal dust and smoke<br/>
+        • <strong>FLIR Radiometric LWIR (8–14 µm)</strong> thermal core for hotspot isolation<br/>
+        • <strong>Zero-lux NoIR camera</strong> with 850 nm infrared night vision array<br/>
+        • Forward 180° pan/tilt obstacle sweep capability
       </td>
-      <td><code>FLIR Boson LWIR</code> <code>850nm IR Illum</code> <code>NoIR Night Vision</code> <code>180° Fisheye</code></td>
+      <td>Radiometric LWIR, 850nm Active IR, NoIR Night Vision, Wide-Angle FOV</td>
     </tr>
     <tr>
       <td><strong>03</strong></td>
-      <td><strong>🤖 Edge AI On-Board Compute</strong></td>
+      <td><strong>🤖 Edge AI Onboard Inference</strong></td>
       <td>
-        • On-board <strong>NVIDIA Jetson AGX Orin (275 TOPS)</strong> &amp; Jetson Nano processing<br/>
-        • Hardware-accelerated <strong>TensorRT YOLOv10 executing in &lt; 3.0 ms per frame</strong><br/>
-        • 100% local edge inference with <strong>zero reliance on cloud latency</strong><br/>
-        • Direct Memory Access (DMA) multi-camera perception pipeline
+        • 100% on-device neural inference without cloud or remote server dependencies<br/>
+        • Trained and optimized <strong>YOLOv8s production detector</strong><br/>
+        • High-throughput inference (>100 FPS on GPU, real-time edge streaming)<br/>
+        • Real-time visual alert generation and bounding-box victim localization
       </td>
-      <td><code>NVIDIA AGX Orin</code> <code>275 TOPS</code> <code>TensorRT YOLOv10</code> <code>&lt;3ms Latency</code></td>
+      <td>Quantized YOLOv8s, TorchScript Engine, Edge Optimization</td>
     </tr>
     <tr>
       <td><strong>04</strong></td>
-      <td><strong>🫁 Mine Safety Monitoring</strong></td>
+      <td><strong>🫁 Multi-Gas Hazard Profiling</strong></td>
       <td>
-        • Continuous real-time 5-gas atmospheric hazard profiling suite<br/>
-        • <strong>CH₄ Methane</strong> (0.01%–100% LEL) with <strong>DGMS 1.25% automatic safety interlock</strong><br/>
-        • <strong>CO Toxic Gas</strong> detection &amp; Graham spontaneous coal combustion ratio calculation<br/>
-        • <strong>O₂ Depletion</strong> (&lt;19.5% alarm), <strong>H₂S Stinkdamp</strong> (0.1 PPM res), &amp; <strong>CO₂ Blackdamp</strong> NDIR sensor
+        • Continuous 5-gas atmospheric telemetry logged across the travel path<br/>
+        • <strong>CH₄ Methane</strong> monitoring with 1.25% DGMS safety interlock cutoff<br/>
+        • <strong>CO Toxic Gas</strong> detection for early spontaneous coal heating detection<br/>
+        • <strong>O₂ Asphyxiation</strong>, <strong>H₂S Sour Gas</strong>, and <strong>CO₂ Blackdamp</strong> monitoring
       </td>
-      <td><code>CH₄ Methane</code> <code>CO Toxic</code> <code>H₂S Stinkdamp</code> <code>O₂ Depletion</code> <code>CO₂ Blackdamp</code></td>
+      <td>Pellistor Bead, Electrochemical Cells, NDIR Optical, 16-Bit ADC Hub</td>
     </tr>
     <tr>
       <td><strong>05</strong></td>
-      <td><strong>🧱 Rescue &amp; Victim Detection</strong></td>
+      <td><strong>🧱 Subsurface Life Detection</strong></td>
       <td>
-        • Multi-modal life confirmation pipeline: Optical RGB + Radiometric LWIR + Bio-Radar<br/>
-        • <strong>400 MHz FMCW UWB Bio-Radar</strong> penetrating up to <strong>10 meters of collapsed rubble</strong><br/>
-        • 1D-CNN neural micro-Doppler filter isolating <strong>0.2–0.5 Hz human chest respiration</strong><br/>
-        • Reliable trapped survivor localization in 0-lux darkness &amp; void spaces
+        • <strong>400 MHz FMCW ground-penetrating bio-radar</strong> for buried victim detection<br/>
+        • Automated actuator drops impedance-matched PEEK radome directly onto rubble<br/>
+        • Extracts <strong>0.2–0.5 Hz human thoracic breathing cadence</strong> through up to 10 m rubble<br/>
+        • Micro-Doppler DSP pipeline separates live chest motion from static clutter
       </td>
-      <td><code>400MHz FMCW Radar</code> <code>10m Penetration</code> <code>0.2–0.5Hz Breathing</code> <code>1D-CNN AI</code></td>
+      <td>400MHz FMCW Radar, PEEK Radome Coupling, Micro-Doppler 1D-CNN</td>
     </tr>
     <tr>
       <td><strong>06</strong></td>
-      <td><strong>📡 Multi-Tier Communications</strong></td>
+      <td><strong>📡 Split-Spectrum Telemetry Mesh</strong></td>
       <td>
-        • <strong>5.8 GHz COFDM digital video transmitter</strong> for non-line-of-sight FHD video around tunnel turns<br/>
-        • <strong>865 MHz Sub-GHz LoRa peer-to-peer &amp; repeater mesh</strong> link<br/>
-        • Wi-SUN low-power subterranean sensor networking integration<br/>
-        • <strong>4G/5G cellular MQTT teleoperation bridge</strong> linking mine headings directly to surface HQ
+        • <strong>Sub-GHz LoRa (433 / 865–867 MHz)</strong> for safety-critical control and gas metrics<br/>
+        • Pierces solid rock pillars, reinforced concrete floors, and debris heaps<br/>
+        • High-bandwidth connectionless wireless mesh for real-time live video<br/>
+        • Hybrid capability for cross-state cloud MQTT telemetry mirroring to HQ
       </td>
-      <td><code>COFDM RF Link</code> <code>LoRa 865MHz</code> <code>Wi-SUN Mesh</code> <code>4G/5G Cellular</code> <code>MQTT Broker</code></td>
+      <td>Sub-GHz LoRa, Connectionless RF Mesh, Long-Range Telemetry</td>
     </tr>
     <tr>
       <td><strong>07</strong></td>
-      <td><strong>🎥 Live Situational Awareness</strong></td>
+      <td><strong>🎮 Standalone Surface Console</strong></td>
       <td>
-        • Synchronized <strong>Quad-Stream HUD</strong> (Optical RGB, Thermal LWIR, NoIR, LiDAR Occupancy)<br/>
-        • <strong>Sub-300 ms glass-to-glass latency</strong> on dedicated handheld dual-joystick OCU<br/>
-        • Real-time gas concentrations, heading compass, and battery diagnostics on OCU TFT screen<br/>
-        • Web-based incident commander dashboard for emergency rescue brigade coordination
+        • Rugged, zero-laptop handheld operator unit for rapid field deployment<br/>
+        • Integrated <strong>7-inch IPS live display</strong> + dual ergonomic analog joysticks<br/>
+        • Real-time annotated video HUD with rolling gas concentration graphs<br/>
+        • Obstacle polar map and system telemetry displayed simultaneously
       </td>
-      <td><code>Quad Video HUD</code> <code>Sub-300ms Teleop</code> <code>Live Gas Gauge</code> <code>Battery Telemetry</code></td>
+      <td>7-Inch IPS Screen, Real-Time HUD, Dual Analog Sticks, Battery Powered</td>
     </tr>
     <tr>
       <td><strong>08</strong></td>
-      <td><strong>🗺️ Subterranean Exploration &amp; 3D SLAM</strong></td>
+      <td><strong>🔊 Two-Way Audio Intercom</strong></td>
       <td>
-        • <strong>Ouster OS0-128 digital LiDAR (128 channels, 360° laser array)</strong><br/>
-        • Time-of-Flight (ToF) rangefinder sensors for precision micro-obstacle clearance<br/>
-        • Real-time factor-graph <strong>3D LIO-SAM SLAM</strong> in GPS-denied cyclic room-and-pillar galleries<br/>
-        • Millimeter-accurate 3D point cloud generation and hazard navigation vectors
+        • High-sensitivity noise-canceling microphone picking up faint cries and tapping<br/>
+        • Waterproof acoustic loudspeaker broadcasting surface rescue directives<br/>
+        • Provides psychological reassurance and guidance to trapped miners
       </td>
-      <td><code>Ouster OS0-128</code> <code>3D LIO-SAM</code> <code>GPS-Denied SLAM</code> <code>ToF Rangefinders</code></td>
+      <td>Duplex Audio, DSP Noise Filter, High-SPL Acoustic Speaker</td>
     </tr>
     <tr>
       <td><strong>09</strong></td>
-      <td><strong>🔊 Two-Way Trapped Worker Intercom</strong></td>
+      <td><strong>🛡️ Deterministic Safety Failsafe</strong></td>
       <td>
-        • Onboard high-sensitivity noise-canceling microphone capturing faint survivor acoustic cries<br/>
-        • Waterproof acoustic loudspeaker broadcasting surface rescue directives to trapped miners<br/>
-        • Active DSP noise suppression eliminating subterranean blower and water background noise<br/>
-        • Direct psychological comfort and emergency guidance during critical rescue phases
+        • Dedicated hardware watchdog triggering immediate emergency motor cutoff<br/>
+        • Instant safe halt upon communication loss exceeding 100–350 ms<br/>
+        • High-current galvanic isolation eliminating electrical transient feedback
       </td>
-      <td><code>Two-Way Intercom</code> <code>Acoustic Speaker</code> <code>Noise-Canceling Mic</code> <code>Duplex Voice</code></td>
+      <td>Hardware Watchdog, Galvanic Isolation, Speed Limiting, E-Stop Interlock</td>
     </tr>
     <tr>
       <td><strong>10</strong></td>
-      <td><strong>⚡ Control &amp; Safety Architecture</strong></td>
+      <td><strong>📜 Statutory Compliance Focus</strong></td>
       <td>
-        • Dedicated <strong>dual-core ESP32 microcontroller</strong> running low-level 100 Hz deterministic motor loops<br/>
-        • High-current BTS7960 43A motor drivers with optocoupled galvanic command isolation<br/>
-        • <strong>100 ms communication loss watchdog</strong> triggering automatic motor cutoff<br/>
-        • Modular hot-swappable I2C / UART sensor architecture &amp; battery monitoring
+        • Structured roadmap toward <strong>DGMS, PESO, and CIMFR Dhanbad clearance</strong><br/>
+        • Target explosion protection: <strong>Ex d I Mb (flameproof)</strong> &amp; <strong>Ex ia I Ma (intrinsically safe)</strong><br/>
+        • Aligned with CMR 2017 Regulations 169 &amp; 181 and Mines Rescue Rules 1985
       </td>
-      <td><code>ESP32 Dual Core</code> <code>BTS7960 43A</code> <code>100ms Watchdog</code> <code>Galvanic Isolation</code></td>
-    </tr>
-    <tr>
-      <td><strong>11</strong></td>
-      <td><strong>🏭 Mine-Deployment &amp; DGMS Focus</strong></td>
-      <td>
-        • Engineered for hazardous Indian coalfields (Jharia, Raniganj, Singareni, Korba)<br/>
-        • Target explosion-proof standard: <strong>Ex d I Mb (flame path gap &lt; 0.1 mm, IEC 60079-1)</strong><br/>
-        • Grade 5 titanium &amp; 316L stainless steel enclosure with non-sparking crawler tracks<br/>
-        • DGMS Tech Circular 02/2021 &amp; CIMFR Dhanbad certification testing roadmap
-      </td>
-      <td><code>Degree III Coal Mines</code> <code>Ex d I Mb Target</code> <code>DGMS Guidelines</code> <code>PESO / CIMFR</code></td>
+      <td>DGMS Tech Circulars, IS/IEC 60079-1/11, Mines Rescue Rules</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-## 🏗️ System Architecture & Data Pipelines
+## 👁️ Multi-Spectral Perception & Edge AI Detection
 
-```mermaid
-flowchart TB
-    subgraph PERCEPTION ["👁️ MULTI-SPECTRAL PERCEPTION SUITE"]
-        LIDAR["Ouster OS0-128 3D LiDAR\n(128 Channels / 360° Point Cloud)"]
-        THERMAL["FLIR Boson LWIR 8–14µm\n(<50 mK Radiometric Thermal)"]
-        NOIR["Sony IMX662 Starvis 2\n(RGB + 850nm IR NoIR Night Vision)"]
-        RADAR["400 MHz FMCW UWB Bio-Radar\n(10m Rubble Penetration Array)"]
-        GAS["Trolex Sentro 5-Gas Array\n(CH4, CO, H2S, O2, CO2, Temp/RH)"]
-    end
+Subterranean disaster environments present extreme visual challenges: dense coal dust particulates ($> 2000\text{ mg/m}^3$), steam plumes from subterranean fires, zero ambient illumination (0 lux), and high visual monotony. SETU implements a synchronized multi-modal perception pipeline to maintain visibility under all conditions.
 
-    subgraph COMPUTE ["🤖 ON-BOARD EDGE AI ENGINE (NVIDIA JETSON AGX ORIN)"]
-        DMA["DeepStream Direct Memory Access (DMA) Video Pipeline"]
-        YOLO["TensorRT YOLOv10 Engine\n(< 3.0 ms Multi-Class Human Detection)"]
-        SLAM["3D LIO-SAM Factor-Graph SLAM\n(IMU Pre-Integration & Loop Closure)"]
-        DSP["1D-CNN Micro-Doppler Respiration DSP\n(0.2–0.5 Hz Breathing Extraction)"]
-        DMA --> YOLO
-        LIDAR --> SLAM
-        RADAR --> DSP
-    end
-
-    subgraph LOW_LEVEL ["⚡ LOW-LEVEL CONTROL & SAFETY (ESP32 + BTS7960)"]
-        ESP["ESP32 Dual-Core Real-Time Controller\n(100 Hz Deterministic Motor Loop)"]
-        DRV["BTS7960 43A High-Current H-Bridges\n(4x Planetary Geared DC Motors)"]
-        WATCHDOG["Hardware Watchdog Timer\n(100ms Signal-Loss Auto-Shutdown)"]
-        ESTOP["Galvanic Fail-Safe E-Stop Relay\n(Instant Power Isolation)"]
-        ESP --> DRV
-        WATCHDOG --> DRV
-        ESTOP --> DRV
-    end
-
-    subgraph COMMS ["📡 REDUNDANT COMMUNICATION MESH"]
-        COFDM["5.8 GHz COFDM Video Transmitter\n(Uncompressed FHD Video Link)"]
-        LORA["865 MHz Sub-GHz LoRa Mesh\n(Telemetry & Joystick Commands)"]
-        CELLULAR["4G/5G Cellular + MQTT Broker\n(Cross-State Teleoperation Bridge)"]
-        INTERCOM["Two-Way Audio Intercom\n(Acoustic Speaker + Noise-Canceling Mic)"]
-    end
-
-    subgraph GCS ["🎮 OPERATOR CONTROL UNIT (OCU) & SURFACE HQ"]
-        OCU["Dedicated Handheld OCU Console\n(Dual Joysticks + TFT Quad-Feed HUD)"]
-        CLOUD["Surface Command Incident Dashboard\n(Remote Web Monitoring & Briefings)"]
-    end
-
-    PERCEPTION --> COMPUTE
-    COMPUTE --> COMMS
-    LOW_LEVEL <--> COMMS
-    COMMS <--> GCS
 ```
+                           ┌──────────────────────────────┐
+                           │   MULTI-MODAL SENSOR INPUT   │
+                           └──────────────┬───────────────┘
+                                          │
+                  ┌───────────────────────┼───────────────────────┐
+                  ▼                       ▼                       ▼
+      ┌───────────────────────┐ ┌───────────────────┐ ┌───────────────────────┐
+      │   LWIR THERMAL CORE   │ │  NoIR OPTICAL CAM │ │  2D/3D RANGE SCANNER  │
+      │  (8–14 µm Long-Wave)  │ │ (Active 850nm IR) │ │ (ToF Proximity Array) │
+      └───────────┬───────────┘ └─────────┬─────────┘ └───────────┬───────────┘
+                  │                       │                       │
+                  ▼                       ▼                       ▼
+      ┌───────────────────────┐ ┌───────────────────┐ ┌───────────────────────┐
+      │ Radiometric Gradient  │ │ Hardware-Letterbox│ │ Polar Obstacle Contour│
+      │ Heatmap & Hotspots    │ │ Image Stream      │ │ Proximity Map         │
+      └───────────┬───────────┘ └─────────┬─────────┘ └───────────┬───────────┘
+                  │                       │                       │
+                  └───────────────────────┼───────────────────────┘
+                                          ▼
+                         ┌─────────────────────────────────┐
+                         │   ONBOARD YOLO EDGE INFERENCE   │
+                         │   (Setu Person Detector Engine) │
+                         └────────────────┬────────────────┘
+                                          ▼
+                         ┌─────────────────────────────────┐
+                         │   MULTI-CONFIRMATION TRACKING   │
+                         │  • Target Bounding Box Overlay  │
+                         │  • Thermal Gradient Verification│
+                         │  • Audible / Visual Alert Flag  │
+                         └─────────────────────────────────┘
+```
+
+### YOLOv8s Model Performance & Benchmark Evaluation
+
+The onboard vision pipeline executes a custom-trained and fine-tuned **YOLOv8s** architecture evaluated against **1,000 unseen holdout test images** containing **4,182 ground truth person instances**:
+
+| Evaluation Metric | Baseline Model (YOLOv8n) | Production Model (YOLOv8s) | Measured Gain | Operational Rescue Impact |
+| :--- | :---: | :---: | :---: | :--- |
+| **Precision** | 72.37% | **74.92%** | **+2.55%** | Drastically suppresses false alarms on discarded clothing, timber props, and rubble shadows. |
+| **Recall** | 54.04% | **57.39%** | **+3.35%** | Significantly improves detection of trapped victims across irregular, partially occluded postures. |
+| **mAP @ 0.50** | 63.88% | **67.03%** | **+3.15%** | Delivers high confidence on standard victim bounding box overlap. |
+| **mAP @ 0.50:0.95** | 39.90% | **42.79%** | **+2.89%** | Superior boundary localization under heavy obstruction and uneven lighting. |
+| **Inference Latency** | 3.39 ms | **7.73 ms / frame** | — | **~130 FPS real-time throughput** on GPU; seamless edge deployment. |
+| **Pre-Processing** | 0.62 ms | **0.30 ms / frame** | Fast | Hardware-accelerated letterboxing and color space conversion. |
+| **Post-Processing** | 0.74 ms | **0.90 ms / frame** | Fast | Rapid Non-Maximum Suppression (NMS) ensuring instantaneous alert delivery. |
 
 ---
 
-## 🔍 Hardware Blueprint & 12 Subsystem Callouts
+## 🧱 Subsurface Life Detection: Impedance-Matched FMCW Bio-Radar
+
+The defining physical innovation of Project SETU addresses a problem where optical, thermal, and acoustic sensors fail completely: **detecting live miners buried underneath compacted roof-fall debris**.
+
+### 1. The Physics of Boundary Reflection & The PEEK Solution
+
+Standard Ground Penetrating Radar (GPR) operates with an air-coupled antenna suspended above the ground. The sharp dielectric permittivity mismatch between air ($\varepsilon_{r1} = 1.0$) and sandstone/coal rubble ($\varepsilon_{r2} \approx 9.0$) creates a severe reflection coefficient at the air-rubble boundary:
+
+$$\Gamma = \frac{\sqrt{\varepsilon_{r1}} - \sqrt{\varepsilon_{r2}}}{\sqrt{\varepsilon_{r1}} + \sqrt{\varepsilon_{r2}}} = \frac{1 - 3}{1 + 3} = -0.50 \quad \implies \quad |\Gamma|^2 = 0.25 \quad (25\%\text{ Power Reflected})$$
+
+In wet rubble ($\varepsilon_r \ge 25$), over **45% of radar energy is immediately reflected** into the air without ever entering the ground.
 
 ```
-                    ┌─────────────────────────[01] Ouster 3D LiDAR (128-CH)
-                    │               ┌─────────[02] FLIR Radiometric Thermal Core
-                    │               │       ┌─[03] COFDM 5.8GHz Whip Antenna
-                    │               │       │
-              ┌─────▼───────────────▼───────▼─────┐
-              │                                   │ ◄─── [04] Raspberry Pi Optical Cam
-              │         PROJECT SETU ROVER        │
-              │                                   │ ◄─── [07] Dual 1200lm Cree LED Floodlights
-              └─────┬───────────────┬───────┬─────┘
-                    │               │       │
-                    │               │       └─[06] ATEX 24V Geared Motors
-                    │               └─────────[12] 48V LiFePO4 Explosion-Proof Battery
-                    └─────────────────────────[05] Articulated Twin Flipper Tracks
-       
-       [08] Jetson AGX Orin (275 TOPS)  |  [09] 400MHz FMCW Bio-Radar Array
-       [10] Fail-Safe Hardware E-Stop    |  [11] 915MHz LoRa Mesh + 9-Axis IMU
+CONVENTIONAL SUSPENDED RADAR:              PROJECT SETU IMPEDANCE-MATCHED RADAR:
+┌───────────────────────────────┐          ┌───────────────────────────────┐
+│     Radar Transceiver Array   │          │     Radar Transceiver Array   │
+└───────────────┬───────────────┘          └───────────────┬───────────────┘
+                │                                          │
+       AIR GAP (εr = 1.0)                        SOLID PEEK PAD (εr = 3.2)
+   ⚡ 25% to 45% Energy Lost                        Automated Actuator Drops
+     at Air-Ground Boundary                       Radome Directly Against Rubble
+─────────────────────────────────          ─────────────────────────────────
+   SANDSTONE / COAL RUBBLE                    SANDSTONE / COAL RUBBLE
+          (εr ≈ 9.0)                                 (εr ≈ 9.0)
+     Weak Penetration (< 2m)                    ⚡ > 93.6% Energy Injected
+                                                Deep Penetration (Up to 10m)
 ```
 
-| Pin # | Subsystem Name | Component Specification | Primary Mission Function |
-|---|---|---|---|
-| **01** | **3D LiDAR Array** | Ouster OS0-128 Uniform Digital LiDAR | 128 channels, 360° point cloud generation, 865nm AR sapphire optical window for real-time LIO-SAM mapping. |
-| **02** | **Multi-Spectral Vision** | FLIR Boson 640 LWIR + Sony IMX662 NoIR | Simultaneous radiometric thermal thermography (8–14 µm) and starlight night vision piercing dense dust. |
-| **03** | **COFDM Video Link** | 5.8 GHz Non-Line-of-Sight Digital RF TX | Low-latency uncompressed FHD video transmission around subterranean tunnel bends and collapsed rubble. |
-| **04** | **Optical Navigation Cam** | High-Framerate Forward Camera + Gimbal | Low-latency forward obstacle awareness and terrain ingress guidance with 2-axis servo pan/tilt gimbal. |
-| **05** | **Articulated Twin Tracks** | Kevlar Anti-Static Rubber Crawler Tracks | Continuous ground contact across 33° rock slag and 220 mm step climbing via planetary sub-tracks. |
-| **06** | **ATEX Geared Motors** | Dual 24V High-Torque Brushless DC Motors | Factory-certified flameproof sealed planetary gearboxes engineered for explosive coal dust environments. |
-| **07** | **High-Beam Floodlights** | Dual 1200-Lumen Cree COB LED Array | 0-lux subterranean blackout illumination with optical diffuser lenses for obstacle navigation. |
-| **08** | **Edge AI Compute** | NVIDIA Jetson AGX Orin (64GB, 275 TOPS) | Executes TensorRT YOLOv10 inference (< 3ms) and factor-graph SLAM state estimation in GPS-denied tunnels. |
-| **09** | **FMCW Bio-Radar Array** | 400 MHz Ultra-Wideband (UWB) Bio-Radar | Ground-penetrating radar detecting trapped human respiration (0.2–0.5 Hz chest motion) through 10m rubble. |
-| **10** | **Hardware E-Stop** | Galvanically Isolated Magnetic Relay | Instantaneous remote battery power isolation upon combustible methane threshold spike (> 1.25%). |
-| **11** | **Telemetry Mesh & IMU** | 915 MHz Sub-GHz Transceiver + 9-Axis IMU | High-reliability telemetry link paired with tactical IMU for active zero-drift gyroscope heading stabilization. |
-| **12** | **Explosion-Proof Battery**| 48V LiFePO4 Thermal-Runaway Enclosure | Flameproof lithium iron phosphate power module delivering 4.5 hours of continuous reconnaissance endurance. |
+**Project SETU's Mechanical Solution:**
+The 400 MHz FMCW radar antenna array is enclosed in an undercarriage tray machined from solid **PEEK (Polyetheretherketone, $\varepsilon_r \approx 3.2$)**. When SETU halts over a suspected collapse zone, an onboard linear actuator extends downward, pressing the PEEK radome pad flat against the rubble.
+
+$$\Gamma_{\text{matched}} = \frac{\sqrt{3.2} - \sqrt{9.0}}{\sqrt{3.2} + \sqrt{9.0}} = \frac{1.788 - 3.000}{1.788 + 3.000} = -0.253 \quad \implies \quad |\Gamma|^2 = 0.064 \quad (6.4\%\text{ Reflection})$$
+
+By eliminating the air void through direct physical contact, **over 93.6% of radar energy is injected directly into the strata**, extending respiration detection capability through up to **10 meters of compacted debris**.
+
+### 2. Micro-Doppler Respiration Signal Extraction Pipeline
+Human respiration produces rhythmic chest-wall displacements (amplitude: $1\text{ to }12\text{ mm}$, frequency: $0.2\text{ to }0.5\text{ Hz}$). The received FMCW return is processed through a multi-stage DSP pipeline:
+1. **Slow-Time DC Clutter Subtraction:** Subtracts the running temporal mean across range bins, suppressing static rock echoes by $> 40\text{ dB}$.
+2. **Butterworth Bandpass Filter ($0.2\text{ Hz to }0.5\text{ Hz}$):** Rejects high-frequency water drips and low-frequency vehicle vibration.
+3. **1D-CNN Micro-Doppler Classifier:** Evaluates waveform cadence to confirm live human respiration and calculate precise depth coordinates.
 
 ---
 
-## 🫁 Multi-Gas Atmospheric Suite & Chemistry Matrix
+## 🫁 Atmospheric Monitoring & Multi-Gas Safety Suite
 
-The rear sensing column of Project SETU houses an integrated multi-gas monitoring array conforming to **DGMS Tech Circular No. 02 of 2021** and **Coal Mines Regulations (CMR) 2017**:
+Project SETU incorporates an integrated 5-gas environmental monitoring array aligned with **DGMS Tech Circular No. 02 of 2021** and **Coal Mines Regulations (CMR) 2017**:
 
 ```
- ┌───────────────────────── REAR SENSOR COLUMN ─────────────────────────┐
- │ [CH4] Methane Dual Core  │ Pellistor Catalytic Bead + Dual-Beam NDIR │
- │ [CO]  Carbon Monoxide    │ 3-Electrode Platinum Electrochemical Cell │
- │ [H2S] Hydrogen Sulfide   │ Ultra-Sensitive Amperometric Probe        │
- │ [O2]  Oxygen Depletion   │ Lead-Free Non-Depleting Optical Cell      │
- │ [CO2] Carbon Dioxide     │ Dual-Wavelength 4.26 µm NDIR Sensor       │
- │ [TMP] Climate Probe      │ MEMS Calibrated -40°C to +85°C / 100% RH  │
- │ [DST] Aerosol Counter    │ Laser Scatter Optical Particulate Counter │
- └───────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────── REAR SENSING COLUMN ───────────────────────────┐
+│  [CH4] Methane Gas        │ Catalytic Oxidation Pellistor (0.01% - 100% LEL)│
+│  [CO]  Carbon Monoxide    │ 3-Electrode Electrochemical Cell (0 - 1000 PPM)│
+│  [O2]  Oxygen Depletion   │ Lead-Free Galvanic Cell (0 - 25.0% Volume)     │
+│  [H2S] Hydrogen Sulfide   │ Micro-Amperometric Sensor (0 - 100 PPM)        │
+│  [CO2] Carbon Dioxide     │ Dual-Wavelength NDIR Optical (0 - 10,000 PPM)  │
+└───────────────────────────────────────────────────────────────────────────┘
 ```
 
-| Gas Molecule | Sensor Chemistry | Detection Range | DGMS Safety Limit | Disaster Verification Role |
-|---|---|---|---|---|
-| **Methane ($\text{CH}_4$)** | Catalytic Pellistor + Dual-Beam NDIR | 0.01% – 100% LEL (0–5.0% vol) | $\le 1.25\%$ Auto-Interlock | Firedamp pocket detection; prevents electrical spark ignition. |
-| **Carbon Monoxide ($\text{CO}$)** | 3-Electrode Solid-State Electrochemical | 0 – 1,000 PPM (Res: 0.5 PPM) | $\le 25\text{ PPM}$ Safe Limit | Early detection of spontaneous coal seam combustion & gob fires. |
-| **Hydrogen Sulfide ($\text{H}_2\text{S}$)** | Ultra-Sensitive Amperometric Probe | 0 – 100 PPM (Res: 0.1 PPM) | $\le 10\text{ PPM}$ Evacuation | Profiles deadly sour gas released from water reservoirs & strata faults. |
-| **Oxygen ($\text{O}_2$)** | Lead-Free Optical Galvanic Cell | 0 – 25.0% Volume (±0.1%) | $\ge 19.5\%$ Breathable Air | Validates safe breathable headings before human entry. |
-| **Carbon Dioxide ($\text{CO}_2$)** | Dual-Wavelength 4.26 µm NDIR | 0 – 10,000 PPM (0–1.0% vol) | $\le 5,000\text{ PPM}$ ($0.5\%$) | Detects heavy suffocating blackdamp pools in low-lying dip workings. |
-| **Temperature &amp; RH** | MEMS Calibrated Digital Probe | -40°C to +85°C / 0–100% RH | $\le 38^\circ\text{C}$ Heat Stress | Identifies underground strata fire proximity &amp; rescue heat indices. |
-| **Coal Dust (PM2.5/10)** | Forward Laser Scatter Counter | 0 – 1,000 $\text{mg/m}^3$ | $\le 50\text{ mg/m}^3$ Explosive | Monitors explosive dust concentration &amp; LiDAR optical de-hazing. |
+| Gas Molecule | Sensor Modality | Detection Range | DGMS Mandatory Limit | Operational Role |
+| :--- | :--- | :--- | :--- | :--- |
+| **Methane ($\text{CH}_4$)** | Catalytic Oxidation Pellistor | 0.01% – 100% LEL | $\le 1.25\%$ Auto-Cutoff | Firedamp pocket detection; triggers immediate motor shutdown upon threshold breach. |
+| **Carbon Monoxide ($\text{CO}$)** | Electrochemical Diffusion | 0 – 1,000 PPM | $\le 25\text{ PPM}$ Safe Limit | Early detection of spontaneous combustion, coal seam fires, and afterdamp. |
+| **Oxygen ($\text{O}_2$)** | Galvanic Lead-Free Cell | 0 – 25.0% Volume | $\ge 19.5\%$ Breathable Air | Continuous evaluation of atmospheric survivability across travel route. |
+| **Hydrogen Sulfide ($\text{H}_2\text{S}$)** | Micro-Amperometric Cell | 0 – 100 PPM | $\le 10\text{ PPM}$ Evacuation | Detection of lethal sour gas emitted from stagnant mine water or strata fissures. |
+| **Carbon Dioxide ($\text{CO}_2$)** | Dual-Wavelength NDIR | 0 – 10,000 PPM | $\le 5,000\text{ PPM}$ ($0.5\%$) | Identifies suffocating blackdamp pools collecting in low dip headings. |
 
----
-
-## 📐 Mathematical & Physics Formulations
-
-### 1. Terramechanical Drawbar Pull & Soil Mechanics
-Chassis traction over loose coal slag and jagged quarry rubble is governed by the **Bekker-Wong Track-Soil Interaction Model**:
-
-$$\tau = c + \sigma \tan \phi = c + \left(\frac{W}{2 b L}\right) \tan \phi$$
-
-$$\text{DP} = 2 b L \left[ c \left( 1 - \frac{1 - e^{-j/K}}{j/K} \right) + \left(\frac{W}{2 b L}\right) \tan \phi \left( 1 - \frac{1 - e^{-j/K}}{j/K} \right) \right] - R_c$$
-
-*Where $b$ = track width, $L$ = ground contact length, $c$ = soil cohesion, $\phi$ = internal friction angle, $j$ = track shear displacement, $K$ = shear deformation modulus, and $R_c$ = compaction resistance.*
-
----
-
-### 2. 400 MHz FMCW Bio-Radar Respiration Extraction
-Micro-Doppler phase modulation induced by human chest wall displacement ($\Delta x(t) = A_r \sin(2\pi f_r t)$) under collapsed rubble is modeled as:
-
-$$s_b(t) \approx A \exp\left(j \left[ 2\pi f_b t + \frac{4\pi}{\lambda} d_0 + \frac{4\pi}{\lambda} A_r \sin(2\pi f_r t) \right]\right)$$
-
-$$\Delta \Phi(t) = \frac{4\pi}{\lambda} A_r \sin(2\pi f_r t) \quad \xrightarrow{\text{1D-CNN + FFT}} \quad f_r \in [0.2, 0.5]\text{ Hz (Human Breathing Cadence)}$$
-
----
-
-### 3. Graham's Spontaneous Combustion Index
-Atmospheric gas progression indicating active underground coal fires is computed in real time via Graham's Ratio:
+### Real-Time Graham's Fire Ratio Tracking
+The controller continuously computes Graham's Ratio to identify subterranean spontaneous combustion:
 
 $$G_R = \frac{\Delta \text{CO}}{\Delta \text{O}_2\text{ Deficit}} = \frac{[\text{CO}]}{0.265 \cdot [\text{N}_2] - [\text{O}_2]} \times 100\%$$
 
-* $G_R < 0.5\%$: Normal subterranean baseline.
-* $0.5\% \le G_R \le 1.0\%$: Early-stage superficial heating.
-* $G_R > 2.0\%$: Active blazing subterranean coal seam fire.
+- **$G_R < 0.5\%$:** Normal subterranean baseline.
+- **$0.5\% \le G_R \le 1.0\%$:** Early superficial heating detected (pre-warning).
+- **$G_R > 2.0\%$:** Active blazing spontaneous combustion confirmed; automated vehicle withdrawal protocol initiated.
 
 ---
 
-### 4. 3D LIO-SAM Factor Graph Pose Optimization
-GPS-denied odometry fuses 6-DOF IMU pre-integration factors with LiDAR point-to-plane and point-to-edge geometric residuals:
+## 📡 Split-Spectrum Resilient Communication Mesh
 
-$$\mathcal{X}^* = \arg\min_{\mathcal{X}} \left\{ \sum_{k} \left\| \mathbf{r}_{\text{IMU}}(k, k+1) \right\|_{\boldsymbol{\Sigma}_{\text{IMU}}}^2 + \sum_{i} \left\| \mathbf{r}_{\text{LiDAR}}(i) \right\|_{\boldsymbol{\Sigma}_{\text{LiDAR}}}^2 + \sum_{j} \left\| \mathbf{r}_{\text{Loop}}(j) \right\|_{\boldsymbol{\Sigma}_{\text{Loop}}}^2 \right\}$$
-
----
-
-## 📹 Physical Validation Evidence
-
-### Exactly 6 Video Demonstrations
-1. **Locomotion & Chassis Propulsion**: 4-belt articulated crawler tracks conquering 33° quarry rock debris and coal slag.
-2. **3D SLAM & Sensor Fusion**: Real-time RGB-D and 3D LiDAR point cloud synthesis in unmapped corridors.
-3. **Direct Handheld OCU Teleoperation**: Dual proportional joystick control delivering sub-300 ms ground response.
-4. **Multi-Terrain Ingress**: Full outdoor haul road and uneven portal transit with continuous 360° LiDAR scanning.
-5. **FLIR Radiometric Thermal Recon**: Dual-spectrum LWIR thermography isolating survivor heat signatures through dense dust.
-6. **50 kg Obstacle Step Climbing**: Planetary flippers actively scaling stacked 50 kg cement bags with 220 mm step clearance.
-
-### Exactly 6 Field Proving Frames
-1. **Frame 01 // Road & Surface Transit**: High-speed ingress stability on compacted asphalt at 1.2 m/s with gyro drift compensation.
-2. **Frame 02 // Quarry Rubble Incline**: Zero-slip traversal over loose jagged coal shale boulders on 30° unpaved inclines.
-3. **Frame 03 // 50 kg Barrier Step Climb**: Front flipper tracks conquering stacked industrial cement bags without motor stall.
-4. **Frame 04 // Handheld OCU YOLOv8 Night Vision**: Live 30 FPS edge AI person detection bounding boxes in 0-lux total darkness.
-5. **Frame 05 // Handheld OCU Radiometric Thermal**: Calibrated LWIR thermography with sub-50 mK thermal sensitivity.
-6. **Frame 06 // Handheld Rescue Mission Console**: Live multi-gas atmospheric telemetry HUD ($H_2S$, $CH_4$, $CO$, $O_2$, Temp).
-
----
-
-## 🌐 Cross-State Teleoperation & Long-Range Control
-
-Project SETU supports a hybrid multi-layer control topology allowing seamless switching between local field operation and remote disaster command:
+To overcome the severe RF attenuation of underground roadways — where standard 2.4 GHz and 5.8 GHz Wi-Fi suffer $> 40\text{ dB}$ signal loss around every 90-degree pillar bend — Project SETU employs a **split-spectrum dual-frequency communication topology**:
 
 ```
-[MUMBAI / HQ COMMAND POST]
-   │
-   ├─► Cloud MQTT Broker (AWS IoT Core / EMQX)
-   │     ▲ (4G/5G Cellular Link / Sub-300ms Glass-to-Glass)
-   │     │
-[JHARKHAND MINE SURFACE PORTAL]
-   │
-   ├─► Local Surface Gateway (High-Gain Directional Yagi Antennas)
-   │     ▲ (COFDM FHD Video Link + 865 MHz LoRa Mesh)
-   │     │
-[UNDERGROUND COLLAPSED HEADING]
-   └─► PROJECT SETU ROVER (ESP32 Motor Core + NVIDIA Jetson Edge AI)
+                       ┌─────────────────────────┐
+                       │    PROJECT SETU ROVER   │
+                       └────────────┬────────────┘
+                                    │
+           ┌────────────────────────┴────────────────────────┐
+           ▼                                                 ▼
+┌─────────────────────────────────┐       ┌─────────────────────────────────┐
+│     SUB-GHz SAFETY CHANNEL      │       │     HIGH-BANDWIDTH VIDEO        │
+│   (433 / 865–867 MHz LoRa)      │       │  (Connectionless RF Mesh)       │
+├─────────────────────────────────┤       ├─────────────────────────────────┤
+│ • Penetrates solid rock ribs    │       │ • Streams 20+ FPS real-time feed│
+│ • Pierces reinforced concrete   │       │ • Multi-hop relay past corners  │
+│ • Commands, gas & heartbeats    │       │ • Bypasses Wi-Fi handshakes     │
+└────────────────┬────────────────┘       └────────────────┬────────────────┘
+                 │                                         │
+                 └────────────────────────┬────────────────┘
+                                          ▼
+                      ┌───────────────────────────────────────┐
+                      │   STANDALONE SURFACE COMMAND CONSOLE  │
+                      │  (Handheld 7-Inch IPS Operator Unit)  │
+                      └───────────────────┬───────────────────┘
+                                          │ Optional Cellular Link
+                                          ▼
+                      ┌───────────────────────────────────────┐
+                      │    HQ CLOUD COMMAND & INCIDENT GCS    │
+                      │ (Remote Cross-State Incident Briefing)│
+                      └───────────────────────────────────────┘
 ```
+
+1. **Sub-GHz Concrete-Piercing Telemetry Channel (Safety-Critical):**
+   - Operating at 433 MHz / 865–867 MHz with a long carrier wavelength ($\lambda \approx 69\text{ cm}$), signals diffract naturally around jagged coal ribs.
+   - **Empirical Validation:** Demonstrated continuous zero-dropout bi-directional data flow from upper building levels through reinforced concrete slabs into a sub-basement.
+   - Compliant with Government of India delicensed Sub-GHz ISM rules.
+2. **Connectionless Multi-Hop Video Relay (High-Bandwidth):**
+   - Transmits compressed visual streams over connectionless RF protocols, eliminating router association delays and handshakes ($< 3.5\text{ ms}$ per-hop transport latency).
+   - Lightweight battery-powered relay nodes dropped at gallery corners extend visual transmission around non-line-of-sight turns.
+3. **Cross-State Cloud Telemetry Bridge:**
+   - Where 4G/5G surface connectivity exists at the mine portal, the console mirrors telemetry to a cloud broker, enabling specialists at remote headquarters to monitor exploration in real time.
+
+---
+
+## 🎮 Standalone Surface Command Console (Zero-Laptop Operation)
+
+In chaotic post-disaster environments, requiring rescue brigades to deploy delicate laptops, configure external routers, or run extension cords causes fatal delays. Project SETU features a **completely self-contained, handheld operator console**:
+
+- **Integrated Display:** High-resolution 7-inch IPS screen updating at 20+ FPS with zero serial bus lag.
+- **Physical Controls:** Industrial dual-axis analog joysticks for intuitive, proportional differential steering and camera pan/tilt control under high-stress conditions.
+- **Operator HUD Overlay:**
+  - Live annotated camera video with YOLO victim detection bounding boxes.
+  - Rolling 60-second multi-gas trend charts ($\text{CH}_4$, $\text{CO}$, $\text{O}_2$, $\text{H}_2\text{S}$, $\text{CO}_2$).
+  - 2D polar obstacle sweep map from the proximity scanner.
+  - Real-time battery state-of-charge, RF signal strength (RSSI), and Graham's fire ratio.
+- **Self-Contained Power:** Integrated rechargeable battery pack with internal power management; ready for instant field deployment in $< 60$ seconds.
 
 ---
 
 ## 🔊 Two-Way Trapped Worker Audio Intercom
 
-The onboard audio subsystem establishes a psychological and operational lifeline between trapped miners and surface commanders:
+SETU bridges the psychological and physical gap between trapped miners and rescue personnel:
+- **High-Sensitivity Noise-Canceling Microphone:** Features active digital noise filtering to suppress continuous mine background noise (water trickling, ventilation rushing) and capture faint survivor acoustic responses, voice calls, or structural pipe-tapping.
+- **Waterproof Acoustic Loudspeaker:** Enables surface commanders to speak directly to trapped personnel, broadcasting evacuation instructions and vital reassurance that rescue operations are underway.
+
+---
+
+## 🛡️ Failsafe & Autonomous Safety Watchdogs
+
+Safety is built directly into SETU's architecture through hardware-enforced fail-safe mechanisms:
+
+1. **Communication Loss Watchdog ($100\text{ to }350\text{ ms}$):**
+   If the rover stops receiving valid control packets for $> 350\text{ ms}$, the real-time controller immediately disables motor drive enable lines and sets PWM outputs to zero, bringing the vehicle to a controlled halt and preventing runaway accidents on slopes.
+2. **Combustible Methane Interlock ($1.25\%\text{ LEL}$):**
+   If methane concentrations breach the statutory DGMS safety threshold ($1.25\%\text{ vol}$), the controller cuts propulsion power, alerts the operator, and sounds an audible warning.
+3. **Motor Jam & Overcurrent Protection:**
+   Drive current is monitored continuously; sudden current spikes indicating a mechanical jam or debris obstruction trigger instantaneous power limiting and execute an automated reverse clearing pulse.
+4. **Firmware Watchdog & Safe State Default:**
+   Independent hardware timers supervise processor health, executing a controlled restart to safe state if anomalous firmware execution occurs.
+
+---
+
+## 📜 Statutory Compliance & Certification Roadmap
+
+Project SETU follows a structured three-tier pathway toward full regulatory certification by the **Directorate General of Mines Safety (DGMS)**, **Petroleum and Explosives Safety Organization (PESO)**, and **CSIR-CIMFR Dhanbad**:
 
 ```
-                  ┌─────────────────────────────────────────────────────┐
-                  │          PROJECT SETU AUDIO INTERCOM SUITE          │
-                  └──────────────────────────┬──────────────────────────┘
-                                             │
-               ┌─────────────────────────────┴─────────────────────────────┐
-               ▼                                                           ▼
-┌──────────────────────────────┐                           ┌──────────────────────────────┐
-│  NOISE-CANCELING MICROPHONE  │                           │ WATERPROOF ACOUSTIC SPEAKER  │
-│  • Sensitivity: -38 dBV/Pa   │                           │ • Max Output: 95 dB SPL @ 1m │
-│  • Active DSP Noise Filter   │                           │ • Resonant Tunnel Amplifier  │
-│  • Picks up faint cries      │                           │ • Broadcasts rescue orders   │
-└──────────────────────────────┘                           └──────────────────────────────┘
+TIER 1: VALIDATION PROTOTYPE (CURRENT STATUS: ~65% BUILT)
+├── Articulated twin-chassis physical build complete with multi-terrain trials
+├── Local underground mine trials completed (thermal, night vision, multi-gas)
+├── Sub-GHz concrete-penetrating telemetry and connectionless video validated
+└── Onboard edge YOLOv8s person detector validated on holdout benchmark dataset
+
+TIER 2: INDUSTRIAL PROTOTYPE (PRE-CERTIFICATION BUILD)
+├── CNC Grade 5 Titanium & 316L Stainless Steel sealed enclosure
+├── Precision-machined flamepaths (joint gap < 0.1 mm, path length >= 12.5 mm)
+├── Energy-limited intrinsically safe external sensor lines (Ex ia I Ma < 20 µJ)
+└── High-stress thermal dissipation testing without open ventilation fans
+
+TIER 3: STATUTORY FIELD DEPLOYMENT UNIT
+├── Hydrostatic explosion containment testing at CSIR-CIMFR Dhanbad
+├── PESO flameproof certification (IS/IEC 60079-1, Ex d I Mb)
+├── Official DGMS operational deployment clearance for Degree III Gassy Mines
+└── Commercial rollout to Coal India Limited (BCCL, ECL, WCL) Mines Rescue Stations
 ```
 
 ---
 
-## 📜 DGMS, PESO & CIMFR Certification Roadmap
+## 💰 Economic Viability & Import Substitution Analysis
 
-```
-PHASE 1: LAB PROTOTYPING & SENSOR INTEGRATION [COMPLETED]
-├── Bench testing of 4-belt crawler chassis, BTS7960 drivers, and Jetson Orin AI
-└── Validation of 5-gas telemetry, FLIR LWIR vision, and 400 MHz FMCW bio-radar
+Currently, Indian mining enterprises rely almost exclusively on imported specialized rescue robots. Project SETU provides a high-capability, indigenously developed alternative supporting **Atmanirbhar Bharat**:
 
-PHASE 2: SIMULATED QUARRY & MINE INGRESS PROVING [CURRENT]
-├── Field testing over 33° rock inclines and 50 kg obstacle step climbing
-└── Sub-300 ms teleoperation validation over COFDM video & LoRa mesh links
-
-PHASE 3: CIMFR / PESO FLAMEPROOF TESTING (Ex d I Mb) [Q3 2026]
-├── Spark ignition explosion-chamber trials in 8.5% CH4 / air mixtures (IEC 60079-1)
-└── Thermal-runaway enclosure testing & flame path gap tolerance validation (< 0.1 mm)
-
-PHASE 4: DGMS MINE RESCUE FIELD INTEGRATION & DEPLOYMENT [Q4 2026]
-├── Pilot deployment with Coal India Rescue Brigades across Jharia & Raniganj coalfields
-└── Production manufacturing of certified man-packable subterranean recon rovers
-```
+| Comparison Metric | Remotec Andros Wolverine V2 (Imported) | Project SETU (Indigenous DGMS-Path) | Strategic Advantage of Project SETU |
+| :--- | :--- | :--- | :--- |
+| **Estimated Unit Cost** | $> ₹2.8\text{ to }₹3.3\text{ Crores}$ ($350,000–$400,000 USD) | **$\approx ₹58\text{ Lakhs}$** ($70,000 USD for certified unit) | **$\approx 80\%$ cost reduction**, enabling widespread multi-colliery deployment. |
+| **Validation Prototype Cost** | N/A (Commercial enterprise only) | **$₹75,000\text{ to }₹1,45,000$** (Functional prototype) | Rapid iterative prototyping with accessible, high-performance components. |
+| **Subsurface Life Detection** | None (Surface optical/thermal only) | **400 MHz FMCW PEEK Bio-Radar Array** | **Detects buried victims up to 10 m deep** under collapsed rubble. |
+| **Communication Mode** | Heavy tether cable or line-of-sight Wi-Fi | **Split-Spectrum Sub-GHz LoRa + Mesh** | Eliminates tether snagging and maintains connectivity around rock bends. |
+| **Total System Weight** | $\approx 550\text{ kg}$ (Requires crane; risks floor collapse) | **$< 38\text{ kg}$** (Articulated man-packable platform) | Rapid 2-person handling; zero risk of crushing fragile strata. |
+| **Deployment Time** | 45–90 minutes (Rigging & tether deployment) | **$< 5\text{ minutes}$** (Rapid handheld console startup) | Maximizes critical response during the post-disaster "Golden Hour". |
 
 ---
 
-## 💻 Repository Structure & Local Development
+## 💻 Repository Structure & Getting Started
 
 ```bash
 SETU/
-├── public/                     # Static assets served at root
-│   ├── images/                 # Optimized high-resolution images & schematics
-│   │   ├── frames/             # 6 Real-world field proving photo frames
-│   │   ├── ocu-screens/        # 4 Handheld OCU mission display captures
-│   │   └── rover-schematic/    # Physical rover chassis & sensor back cutouts
-│   └── videos/                 # Optimized H.264 MP4 demonstration video assets
-├── src/                        # Modular frontend source code
-│   ├── index.css               # Master CSS bundle entrypoint
-│   ├── js/                     # Application logic modules
-│   │   ├── animations.js       # Smooth GSAP / Lenis scrolling & HUD scanlines
-│   │   ├── architectureFlow.js # Interactive architecture pipeline visualizer
-│   │   ├── hardwareLabeling.js # 12-Hotspot rover blueprint & 7-gas sensor suite
-│   │   ├── main.js             # Application initialization & feature filters
-│   │   ├── telemetrySim.js     # Live OCU canvas & multi-gas telemetry simulation
-│   │   ├── themeToggle.js      # Glowing Filament Lightbulb switch (Light/Dark HUD)
-│   │   ├── videoController.js  # Smooth video autoplay & IntersectionObserver
-│   │   └── voiceAgent.js       # AI Voice Recon Officer with strict hover control
-│   └── styles/                 # Modular CSS stylesheets
-│       ├── components.css      # Badges, buttons, tech frames, and modals
-│       ├── hardware-labeling.css # Blueprint pins, gas cards, and OCU tabs
-│       ├── hero.css            # Full-screen moving rover video background
-│       ├── navbar.css          # Header layout & glowing lightbulb button
-│       ├── responsive.css      # Mobile-first responsive layout (320px to 4K)
-│       ├── sections.css        # Features matrix, math proofs, and credibility
-│       └── themes.css          # Dual Theme Engine (Tactical Dark / Daylight HUD)
-├── index.html                  # Master web application page
-├── package.json                # Project dependencies & npm build scripts
-├── vercel.json                 # Vercel deployment config with video byte-ranges
-├── vite.config.js              # Vite build tool configuration
-└── README.md                   # Comprehensive system documentation
+├── edge-ai/                    # Onboard Edge AI inference pipeline
+│   └── detect.py               # Real-time multi-camera YOLO person detection script
+├── firmware/                   # Real-time microcontroller firmware
+│   ├── controller.ino          # Handheld console firmware (TFT HUD, joysticks, LoRa)
+│   └── rover.ino               # Rover real-time firmware (motor control, sensors, watchdog)
+├── hardware/                   # Physical CAD models, PCB designs, and hardware BOM
+│   ├── BOM/                    # Detailed Bill of Materials
+│   ├── PCB/                    # Star-grounded custom PCB layouts & Gerber files
+│   └── schematics/             # Subsystem block schematics & architecture diagrams
+├── models/                     # Trained neural network model checkpoints
+│   ├── best.pt                 # Production YOLOv8s trained weights (21.5 MB)
+│   ├── setu_person_detector.pt # Primary edge deployment model
+│   ├── checkpoints/            # Training epoch checkpoints
+│   ├── exported/               # Standalone TorchScript model for C++/edge deployment
+│   └── pretrained/             # Pretrained base weights (YOLOv8n, YOLOv8s)
+├── scripts/                    # Model training, validation, and data curation scripts
+│   ├── train.py                # Fine-tuning script with augmentations
+│   └── add_background_samples.py # Script for adding mine-like background images
+├── Documentations/             # Academic papers, DGMS circulars, and reference literature
+├── ARCHITECTURE.md             # Complete technical architecture & deployment dossier
+├── VALIDATION.md               # Empirical AI model benchmark & evaluation report
+├── requirements.txt            # Python dependencies for edge AI and tools
+└── README.md                   # System documentation
 ```
 
-### Quickstart & Build Instructions
+### 1. Edge AI Environment Setup
+
+Clone the repository and install the required dependencies:
 
 ```bash
-# 1. Clone repository
+# Clone the repository
 git clone https://github.com/abarhammalik/SETU.git
 cd SETU
 
-# 2. Install dependencies
-npm install
+# Create and activate a Python virtual environment
+python -m venv venv
+.\venv\Scripts\activate    # On Windows
+# source venv/bin/activate # On Linux/macOS
 
-# 3. Launch local development server (Port 3000)
-npm run dev
-
-# 4. Compile optimized production bundle
-npm run build
-
-# 5. Preview production build locally
-npm run preview
+# Install dependencies
+pip install -r requirements.txt
 ```
+
+### 2. Running Live Edge AI Person Detection
+
+Execute real-time victim detection on a video stream, local video file, or camera feed:
+
+```bash
+# Run detection using your default webcam / connected video capture device
+python edge-ai/detect.py --model models/best.pt --source 0 --conf 0.50
+
+# Run detection on a recorded mine trial or tunnel video
+python edge-ai/detect.py --model models/best.pt --source path/to/tunnel_feed.mp4 --conf 0.55
+
+# Run with visual preview window disabled for headless edge deployment
+python edge-ai/detect.py --model models/best.pt --source 0 --conf 0.50 --no-view
+```
+
+### 3. Firmware Deployment
+
+- **Rover Controller (`firmware/rover.ino`):** Compile and flash to the rover's real-time controller using Arduino IDE or PlatformIO. Ensure the appropriate motor driver and LoRa library dependencies are installed.
+- **Handheld Surface Console (`firmware/controller.ino`):** Compile and flash to the handheld controller board. Configures the TFT display HUD, analog joystick reading, and bi-directional LoRa communication.
 
 ---
 
 <div align="center">
 
 **PROJECT SETU — SUBTERRANEAN MINE RESCUE & RECONNAISSANCE ROVER**  
-*Engineered for Smart India Hackathon 2026 (PS ID: SIH26039)*  
-Developed with pride for **Atmanirbhar Bharat** & **Make in India** 🇮🇳 by [**abarhammalik**](https://github.com/abarhammalik)
+*Engineered for Smart India Hackathon 2026 (Problem Statement ID: SIH26039)*  
+Developed with pride for **Atmanirbhar Bharat** & **Make in India** 🇮🇳
 
 [**Back to Top ⬆**](#-project-setu-सेतु)
 
