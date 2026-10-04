@@ -4,9 +4,11 @@
 ### Articulated Twin-Chassis Subterranean Mine Reconnaissance & Multi-Hazard Edge AI Profiling Infrastructure
 **Bridging the Critical 2-to-4 Hour Emergency Inspection Delay in Degree III Gassy Underground Coal Mines**
 
-[![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-SIH_2026_PS_ID:_SIH26039-f59e0b?style=for-the-badge&logo=target&logoColor=white)](https://github.com/abarhammalik/SETU)
-[![Prototype Status](https://img.shields.io/badge/Platform_Status-65%25_Physically_Built_&_Mine_Validated-10b981?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/abarhammalik/SETU)
-[![DGMS Roadmap](https://img.shields.io/badge/Statutory_Target-DGMS_%2F_PESO_Ex_d_I_Mb-00f0ff?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/abarhammalik/SETU)
+[![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-SIH_2026_PS_ID:_SIH26039-f59e0b?style=for-the-badge&logo=target&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
+[![Live Platform](https://img.shields.io/badge/Live_Deployment-Vercel_Production-00f0ff?style=for-the-badge&logo=vercel&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
+[![YouTube Demos](https://img.shields.io/badge/YouTube-Video_Demonstrations-ff0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD)
+[![CAD Chassis](https://img.shields.io/badge/3D_CAD-Chassis_Design_Repo-10b981?style=for-the-badge&logo=autodesk&logoColor=white)](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design)
+[![DGMS Roadmap](https://img.shields.io/badge/Statutory_Target-DGMS_%2F_PESO_Ex_d_I_Mb-8b5cf6?style=for-the-badge&logo=shield&logoColor=white)](https://setu-mine-rescue-rover.vercel.app/#credibility)
 
 ---
 
@@ -17,7 +19,7 @@
 [![Bio-Radar](https://img.shields.io/badge/Subsurface_Radar-400MHz_FMCW_Impedance_Matched-8b5cf6?style=flat-square)](#)
 [![Telemetry](https://img.shields.io/badge/RF_Telemetry-Sub--GHz_LoRa_Strata_Penetrating-0284c7?style=flat-square)](#)
 
-[📑 **Full Architecture Dossier**](ARCHITECTURE.md) • [📊 **Model Benchmark Report**](VALIDATION.md) • [⚡ **System Overview**](summary.md) • [🔬 **Technical Dossier**](discrption.md)
+[🌐 **Explore Live Web Platform & OCU Terminal**](https://setu-mine-rescue-rover.vercel.app) • [📹 **YouTube Field Validation Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [🛠️ **3D CAD Chassis Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [📁 **Important Docs Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [💻 **Live Dashboard Repo**](https://github.com/moinkhanCreates/SETU)
 
 </div>
 
@@ -25,20 +27,36 @@
 
 ## 📑 Table of Contents
 1. [Executive Summary & Problem Statement](#-executive-summary--problem-statement)
-2. [Ground-Level Realities & Operational Bottleneck](#-ground-level-realities--operational-bottleneck)
-3. [Empirical Validation & 65% Prototype Build Status](#-empirical-validation--65-prototype-build-status)
-4. [Platform Architecture & Co-Processor Decoupling](#-platform-architecture--co-processor-decoupling)
-5. [Tactical Capabilities & Subsystem Breakdown](#-tactical-capabilities--subsystem-breakdown)
-6. [Multi-Spectral Perception & Edge AI Detection](#-multi-spectral-perception--edge-ai-detection)
-7. [Subsurface Life Detection: Impedance-Matched FMCW Bio-Radar](#-subsurface-life-detection-impedance-matched-fmcw-bio-radar)
-8. [Atmospheric Monitoring & Multi-Gas Safety Suite](#-atmospheric-monitoring--multi-gas-safety-suite)
-9. [Split-Spectrum Resilient Communication Mesh](#-split-spectrum-resilient-communication-mesh)
-10. [Standalone Surface Command Console (Zero-Laptop Operation)](#-standalone-surface-command-console-zero-laptop-operation)
-11. [Two-Way Trapped Worker Audio Intercom](#-two-way-trapped-worker-audio-intercom)
-12. [Failsafe & Autonomous Safety Watchdogs](#-failsafe--autonomous-safety-watchdogs)
-13. [Statutory Compliance & Certification Roadmap (DGMS, PESO, CIMFR)](#-statutory-compliance--certification-roadmap)
-14. [Economic Viability & Import Substitution Analysis](#-economic-viability--import-substitution-analysis)
-15. [Repository Structure & Getting Started](#-repository-structure--getting-started)
+2. [Project Ecosystem, Live Deployments & Essential Repositories](#-project-ecosystem-live-deployments--essential-repositories)
+3. [Ground-Level Realities & Operational Bottleneck](#-ground-level-realities--operational-bottleneck)
+4. [Empirical Validation & 65% Prototype Build Status](#-empirical-validation--65-prototype-build-status)
+5. [Platform Architecture & Co-Processor Decoupling](#-platform-architecture--co-processor-decoupling)
+6. [Tactical Capabilities & Subsystem Breakdown](#-tactical-capabilities--subsystem-breakdown)
+7. [Multi-Spectral Perception & Edge AI Detection](#-multi-spectral-perception--edge-ai-detection)
+8. [Subsurface Life Detection: Impedance-Matched FMCW Bio-Radar](#-subsurface-life-detection-impedance-matched-fmcw-bio-radar)
+9. [Atmospheric Monitoring & Multi-Gas Safety Suite](#-atmospheric-monitoring--multi-gas-safety-suite)
+10. [Split-Spectrum Resilient Communication Mesh](#-split-spectrum-resilient-communication-mesh)
+11. [Standalone Surface Command Console (Zero-Laptop Operation)](#-standalone-surface-command-console-zero-laptop-operation)
+12. [Two-Way Trapped Worker Audio Intercom](#-two-way-trapped-worker-audio-intercom)
+13. [Failsafe & Autonomous Safety Watchdogs](#-failsafe--autonomous-safety-watchdogs)
+14. [Statutory Compliance & Certification Roadmap (DGMS, PESO, CIMFR)](#-statutory-compliance--certification-roadmap)
+15. [Economic Viability & Import Substitution Analysis](#-economic-viability--import-substitution-analysis)
+16. [Repository Structure & Getting Started](#-repository-structure--getting-started)
+
+---
+
+## 🔗 Project Ecosystem, Live Deployments & Essential Repositories
+
+Project SETU encompasses physical mechatronics, edge artificial intelligence, 3D structural CAD modeling, and cloud/edge mission command dashboards across specialized repositories and deployment links:
+
+| Project Domain / Resource | Access Link | Description & Contents |
+| :--- | :--- | :--- |
+| **🌐 Live Web Platform & OCU Simulator** | [**setu-mine-rescue-rover.vercel.app**](https://setu-mine-rescue-rover.vercel.app) | Production web platform featuring the interactive OCU Terminal HUD simulator, 6 high-definition field demonstration videos, interactive 12-hotspot schematic viewer, dual-theme daylight/tactical engine, and DGMS roadmap. |
+| **💻 Live Dashboard Web Repository** | [**moinkhanCreates/SETU**](https://github.com/moinkhanCreates/SETU) | Complete frontend web platform source code built with modern Vanilla CSS, GSAP animations, interactive audio recon officer, and modular UI components. |
+| **🛠️ 3D CAD Chassis & Mechanical Repo** | [**Mine-Rover-Chasis_Design**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) | Complete mechanical design repository containing 3D CAD assemblies, STEP/STL fabrication models, articulated twin-chassis rocker linkages, and structural FEA load analyses. |
+| **📹 YouTube Field Validation Playlist** | [**Watch on YouTube (Playlist)**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) | Curated video demonstration archive containing live footage of: 35° incline climbing, 50 kg obstacle step climbing, active underground mine testing, zero-lux night vision trials, and handheld OCU teleoperation. |
+| **📁 Technical Documentation & Literature** | [**Google Drive Document Repository**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) | Secure repository containing verified academic research papers, DGMS technical circulars, Coal Mines Regulations (CMR) 2017 standards, sensor calibration certificates, and testing dossiers. |
+| **📡 Real-Time Mission GCS Dashboard** | *Repository & Live Deployment Coming Soon* | The real-time operational GCS (Ground Control Station) dashboard for live telemetry streaming, WebSocket robot bridge, and multi-rover command will be linked here upon final release. |
 
 ---
 
@@ -615,6 +633,6 @@ python edge-ai/detect.py --model models/best.pt --source 0 --conf 0.50 --no-view
 *Engineered for Smart India Hackathon 2026 (Problem Statement ID: SIH26039)*  
 Developed with pride for **Atmanirbhar Bharat** & **Make in India** 🇮🇳
 
-[**Back to Top ⬆**](#-project-setu-सेतु)
+[**Explore Live Web Platform**](https://setu-mine-rescue-rover.vercel.app) • [**YouTube Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [**CAD Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [**Technical Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [**Back to Top ⬆**](#-project-setu-सेतु)
 
 </div>
