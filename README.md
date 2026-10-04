@@ -8,7 +8,7 @@
 [![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-SIH_2026_PS_ID:_SIH26039-f59e0b?style=for-the-badge&logo=target&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
 [![DGMS Ex d I Mb](https://img.shields.io/badge/Certification_Target-DGMS_%2F_PESO_Ex_d_I_Mb-10b981?style=for-the-badge&logo=shield&logoColor=white)](https://setu-mine-rescue-rover.vercel.app)
 
----Q
+---
 
 [![Atmanirbhar Bharat](https://img.shields.io/badge/National_Mission-Atmanirbhar_Bharat-ff9933?style=flat-square&logo=india&logoColor=white)](#)
 [![Make In India](https://img.shields.io/badge/Initiative-Make_in_India-138808?style=flat-square)](#)
@@ -478,7 +478,7 @@ SETU/
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/moinkhanCreates/SETU.git
+git clone https://github.com/abarhammalik/SETU.git
 cd SETU
 
 # 2. Install dependencies
@@ -500,7 +500,7 @@ npm run preview
 
 **PROJECT SETU — SUBTERRANEAN MINE RESCUE & RECONNAISSANCE ROVER**  
 *Engineered for Smart India Hackathon 2026 (PS ID: SIH26039)*  
-Developed with pride for **Atmanirbhar Bharat** & **Make in India** 🇮🇳
+Developed with pride for **Atmanirbhar Bharat** & **Make in India** 🇮🇳 by [**abarhammalik**](https://github.com/abarhammalik)
 
 [**Back to Top ⬆**](#-project-setu-सेतु)
 
