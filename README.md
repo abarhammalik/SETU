@@ -19,7 +19,7 @@
 [![Bio-Radar](https://img.shields.io/badge/Subsurface_Radar-400MHz_FMCW_Impedance_Matched-8b5cf6?style=flat-square)](#)
 [![Telemetry](https://img.shields.io/badge/RF_Telemetry-Sub--GHz_LoRa_Strata_Penetrating-0284c7?style=flat-square)](#)
 
-[🌐 **Explore Live Web Platform & OCU Terminal**](https://setu-mine-rescue-rover.vercel.app) • [📹 **YouTube Field Validation Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [🛠️ **3D CAD Chassis Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [📁 **Important Docs Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [💻 **Live Dashboard Repo**](https://github.com/moinkhanCreates/SETU)
+[🌐 **Explore Live Web Platform & OCU Terminal**](https://setu-mine-rescue-rover.vercel.app) • [📹 **YouTube Field Validation Playlist**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) • [🛠️ **3D CAD Chassis Repo**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) • [📁 **Important Docs Drive**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) • [💻 **Live Dashboard**](https://setu-dashboard.streamlit.app/)
 
 </div>
 
@@ -56,7 +56,7 @@ Project SETU encompasses physical mechatronics, edge artificial intelligence, 3D
 | **🛠️ 3D CAD Chassis & Mechanical Repo** | [**Mine-Rover-Chasis_Design**](https://github.com/moinkhanCreates/Mine-Rover-Chasis_Design) | Complete mechanical design repository containing 3D CAD assemblies, STEP/STL fabrication models, articulated twin-chassis rocker linkages, and structural FEA load analyses. |
 | **📹 YouTube Field Validation Playlist** | [**Watch on YouTube (Playlist)**](https://youtube.com/playlist?list=PLOjglmLodr_k&si=PKPAS_mzl7UQjdjD) | Curated video demonstration archive containing live footage of: 35° incline climbing, 50 kg obstacle step climbing, active underground mine testing, zero-lux night vision trials, and handheld OCU teleoperation. |
 | **📁 Technical Documentation & Literature** | [**Google Drive Document Repository**](https://drive.google.com/drive/folders/1ZpYzkl9uq6j0Yt1aS_L_3PzhsUWMI0u5) | Secure repository containing verified academic research papers, DGMS technical circulars, Coal Mines Regulations (CMR) 2017 standards, sensor calibration certificates, and testing dossiers. |
-| **📡 Real-Time Mission GCS Dashboard** | *Repository & Live Deployment Coming Soon* | The real-time operational GCS (Ground Control Station) dashboard for live telemetry streaming, WebSocket robot bridge, and multi-rover command will be linked here upon final release. |
+| **📡 Real-Time Mission GCS Dashboard** | [**setu-dashboard.streamlit.app**](https://setu-dashboard.streamlit.app/)<br>[**abarhammalik/SETU-Dashboard**](https://github.com/abarhammalik/SETU-Dashboard) | The real-time operational GCS (Ground Control Station) telemetry dashboard and atmospheric physics analytics engine built with Streamlit, dual-mode 0-lux tactical dark / high-visibility light HUD, 5-gas Coward explosibility triangle, Graham's fire ratio, 400 MHz FMCW bio-radar vital sign isolation, and multi-sensor mission scenario simulation. |
 
 ---
 
@@ -562,6 +562,11 @@ Currently, Indian mining enterprises rely almost exclusively on imported special
 
 ```bash
 SETU/
+├── dashboard/                  # Streamlit Enterprise Surface GCS Telemetry Dashboard & Physics Analytics Engine
+│   ├── app.py                  # Streamlit Enterprise GCS UI dashboard & dual tactical HUD
+│   ├── mine_analytics.py       # Mathematical engine for atmospheric mine physics & gas dynamics
+│   ├── requirements.txt        # Dashboard dependencies (streamlit, altair, pandas, numpy)
+│   └── README.md               # Senior-level GCS technical documentation & user guide
 ├── edge-ai/                    # Onboard Edge AI inference pipeline
 │   └── detect.py               # Real-time multi-camera YOLO person detection script
 ├── firmware/                   # Real-time microcontroller firmware
@@ -624,6 +629,23 @@ python edge-ai/detect.py --model models/best.pt --source 0 --conf 0.50 --no-view
 
 - **Rover Controller (`firmware/rover.ino`):** Compile and flash to the rover's real-time controller using Arduino IDE or PlatformIO. Ensure the appropriate motor driver and LoRa library dependencies are installed.
 - **Handheld Surface Console (`firmware/controller.ino`):** Compile and flash to the handheld controller board. Configures the TFT display HUD, analog joystick reading, and bi-directional LoRa communication.
+
+### 4. Running the Mission GCS Telemetry Dashboard
+
+Launch the real-time Streamlit GCS console locally:
+
+```bash
+# Navigate to the dashboard directory
+cd dashboard
+
+# Install GCS dashboard dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit GCS console
+streamlit run app.py
+```
+
+The application will launch on `http://localhost:8501`. Alternatively, access the production deployment directly at [**setu-dashboard.streamlit.app**](https://setu-dashboard.streamlit.app/).
 
 ---
 

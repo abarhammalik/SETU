@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+venv/
+env/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+.DS_Store
+
+# Snapshots and media files
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+
+# Test & scratch scripts
+test_*.py
+inspect_*.py
+scratch/
+
+# Documentation notes (keep only README.md)
+*.md
+!README.md
